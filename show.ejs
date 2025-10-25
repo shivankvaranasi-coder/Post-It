@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h2>Post Details</h2>
+
+    <p><strong>ID:</strong>
+        <%= post.id %>
+    </p>
+    <h3 class="user">@<%= post.username %>
+    </h3>
+    <p class="content">
+        <%= post.content %>
+    </p>
+
+    <a href="/posts">Back to All Posts</a> |
+    <a href="/posts/new">Create New Post</a>
+</body>
+
+</html>
